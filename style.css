@@ -1,0 +1,46 @@
+nav{
+    height: 94px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #412C7D0D;
+    opacity: 1;
+    text-align: center;
+}
+
+.btn.getstarted{
+    background: #9672FB 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    /* padding: 11px 25px; */
+    width: 194px;
+}
+
+ul.navbar-nav{
+    margin-left: 160px;
+    width: 100%;
+    /* text-align: center; */
+}
+
+ul.navbar-nav li{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #021C34;
+    margin-left: 40px;
+}
+
+button.earlyaccess{
+    width: 278px;
+    height: 70px;
+    background: #9672FB;
+    border-radius: 5px;
+    color:white;
+}
+
+img.personimage{
+    background: transparent linear-gradient(180deg, #F8F5FF00 0%, #F8F5FF 100%) 0% 0% no-repeat padding-box;
+}
+
+body{
+    background-color: #F8F5FF;
+}
