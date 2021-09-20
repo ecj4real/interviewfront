@@ -103,7 +103,7 @@
             $('#calculator').bind('input', function(){
                 let input = $(this).val();
                 $.ajax({
-                    url: "http://interview2.test/" + input,
+                    url: "http://localhost:8000/" + input,
                     success: function(response){
                         $('#result').text(response);
                         console.log(response);
