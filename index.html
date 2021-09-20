@@ -60,7 +60,59 @@
             <br/><br/>
             <div style="margin: 0 auto; width: 60%">
                 <h1 style="text-align:center">We've disbursed above $100,000 in loans so far to small businesses</h1>
+                <br/><br/>
+                <p style="text-align: center;">Some of which are:</p>
+                <br/>
             </div>
+            
+            <div style="margin: 0 auto; width: 80%; max-height: 90px">
+                <img style="height:90px; padding: 5px;" class="img-fluid" src="images/dunsin_bankole (dip ash).png"/>
+                <img style="height:90px; padding: 5px;" class="img-fluid" src="images/Group 5300.svg" />
+                <img style="height:90px; padding: 5px;" class="img-fluid" src="images/Group_5302-removebg-preview.png"/>
+                <img style="height:90px; padding: 5px;" class="img-fluid" src="images/Mask Group 831.png"/>
+                <img style="height:90px; padding: 5px;" class="img-fluid" src="images/Mask Group 832.png"/>
+            </div>
+
+            <br/><br/>
+            <h2 style="text-align: center; margin-bottom: 50px;">Cash flow is king</h2>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <p>Current Cash Flow</p>
+                        <h3>How much do you make?</h3>
+                        <input type="number" id="calculator"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <p>With Pennee</p>
+                      <h3>How much you'll make?</h3>
+                      <p id="result">0.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('#calculator').bind('input', function(){
+                let input = $(this).val();
+                $.ajax({
+                    url: "http://interview2.test/" + input,
+                    success: function(response){
+                        $('#result').text(response);
+                        console.log(response);
+                    },
+                    error: function(response){
+
+                    }
+                })
+            });
+        </script>
     </body>
 </html>
